@@ -1,7 +1,7 @@
 {
-    "name": "data-structures-and-algorithms",
+    "name": "data-structures-and-algorithms-course",
     "version": "0.0.1",
-    "description": "Data structures and algorithms",
+    "description": "Data structures and algorithms-course",
     "scripts": {
         "dev": "webpack --mode development",
         "start": "webpack-dev-server --mode development",
@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sergidt/data-structures-and-algorithms.git"
+        "url": "git+https://github.com/sergidt/data-structures-and-algorithms-course.git"
     },
     "author": "Sergi Dote Teixidor",
     "license": "MIT",
