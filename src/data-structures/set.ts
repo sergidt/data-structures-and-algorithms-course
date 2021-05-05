@@ -1,18 +1,23 @@
-/*
-const union = ???; 
+const union = <T>(setA: Set<T>, setB: Set<T>): Set<T> => new Set<T>([...setA, ...setB]);
 
-const intersection = ???; 
+const intersection = <T>(setA: Set<T>, setB: Set<T>): Set<T> => new Set<T>([...setA].filter(x => setB.has(x)));
 
-const difference = ???;
+const difference = <T>(setA: Set<T>, setB: Set<T>): Set<T> => new Set<T>([...setA].filter(x => !setB.has(x)));
 
-const xor = ???;
+const xor = <T>(setA: Set<T>, setB: Set<T>): Set<T> => new Set<T>([...setA].filter(x => !setB.has(x)).concat([...setB].filter(x => !setA.has(x))));
 
-const subset = ???;
-*/
+const subset = <T>(setA: Set<T>, setB: Set<T>): boolean => ([...setA].every(x => !setB.has(x)));
 
 export function setTest() {
-    const setA = new Set([1,2,3,4]);
-    const setB = new Set([3,4,5,6]);
+    const setA = new Set([1, 2, 3, 4]);
+    const setB = new Set([3, 4, 5, 6]);
 
- 
+    console.log('Set A', [...setA]);
+    console.log('Set B', [...setB]);
+
+    console.log('union', union(setA, setB));
+    console.log('intersection', intersection(setA, setB));
+    console.log('difference', difference(setA, setB));
+    console.log('xor', xor(setA, setB));
+    console.log('A is subset of B?', subset(setA, setB));
 }

@@ -1,8 +1,18 @@
-import { arrayTest } from "./data-structures/array";
-import { setTest } from "./data-structures/set";
+import { queueExercises } from './exercises/decimal-to-binario';
 
 console.clear();
 
-arrayTest();
+//arrayTest();
 
-setTest();
+//arrayExercises();
+//setTest();
+
+//stackTest();
+
+//queueTest();
+
+//dequeueTest();
+
+//dequeueExercises();
+
+queueExercises();
